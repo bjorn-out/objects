@@ -33,7 +33,7 @@ def works():
         
         # check if all required methods exist
         for method in ['enqueue', 'dequeue', 'peek', 'size', 'empty']:
-            if not hasattr(module.Queue, method) or not callable(getattr(cls, method)):
+            if not hasattr(module.Queue, method) or not callable(getattr(module.Queue, method)):
                 raise Exception()
         
         # generate a list to run tests on
