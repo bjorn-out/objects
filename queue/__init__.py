@@ -67,7 +67,7 @@ def works():
         assert queue.size() == 1
         assert test == queue.dequeue()
         assert queue.size() == 0
-
+        
     except Exception as e:
         # throw a general error if anything fails
         raise check50.Failure(e, help=help_text)
