@@ -39,7 +39,7 @@ def works():
         # generate a list to run tests on
         tests = list(string.ascii_uppercase)
         tests += list(range(10))
-        tests = random.shuffle(tests)
+        random.shuffle(tests)
 
         # create an instance of Queue
         queue = module.Queue()
